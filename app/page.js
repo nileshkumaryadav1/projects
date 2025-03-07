@@ -7,7 +7,8 @@ const pages = [
   { id: 'college', name: 'College Finder', content: 'https://collegefinder.vercel.app' },
   { id: 'movie', name: 'Movie Finder', content: 'https://moviefinders.vercel.app' },
   { id: 'blogapp', name: 'Blog App', content: 'https://blogwriting.vercel.app' },
-  { id: 'portfolio', name: 'Portfolio', content: 'https://nileshkumar.vercel.app' }
+  { id: 'portfolio', name: 'Portfolio', content: 'https://nileshkumar.vercel.app' },
+  { id: 'about', name: 'About', content: '/about' }
 ];
 
 export default function Page() {
@@ -35,7 +36,7 @@ export default function Page() {
       {/* Content Display Area */}
       <div className="p-3 w-3/4 max-w-5xl rounded-lg shadow-xl bg-white flex flex-col items-center" style={{ marginLeft: '-4px' }}>
         {/* <h4 className="text-xl font-semibold text-gray-800 mb-4">{pages.find((page) => page.id === activePage)?.name}</h4> */}
-        <a href={pages.find((page) => page.id === activePage)?.content} >Visit full Website➡️</a>
+        <a href={pages.find((page) => page.id === activePage)?.content} target='_blank' >Visit full Website➡️</a>
         <iframe src={pages.find((page) => page.id === activePage)?.content} width="100%" height="600px" style={{ border: 'none', borderRadius: '10px' }} />
       </div>
     </div>
