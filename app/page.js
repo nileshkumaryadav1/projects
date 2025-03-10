@@ -5,7 +5,6 @@ import { useState } from 'react';
 const pages = [
   { id: 'academic', name: 'Academic Finder', content: 'https://academicfinder.vercel.app' },
   { id: 'college', name: 'College Finder', content: 'https://collegefinder.vercel.app' },
-  { id: 'movie', name: 'Movie Finder', content: 'https://moviefinders.vercel.app' },
   { id: 'blogapp', name: 'Blog App', content: 'https://blogwriting.vercel.app' },
   { id: 'portfolio', name: 'Portfolio', content: 'https://nileshkumar.vercel.app' },
   { id: 'about', name: 'About', content: '/about' }
